@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'com.ssi.clean.example.usecase'
+
+dependencies {
+	implementation(
+		project(':entities'),
+		'org.apache.commons:commons-lang3:3.7'
+	)
+}

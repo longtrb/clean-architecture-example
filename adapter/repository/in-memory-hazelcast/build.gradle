@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'com.ssi.clean.example.db.hazelcast'
+
+dependencies {
+	implementation(
+		project(':entities'),
+		project(':usecase'),
+		'com.hazelcast:hazelcast:3.9.3',
+	)
+}

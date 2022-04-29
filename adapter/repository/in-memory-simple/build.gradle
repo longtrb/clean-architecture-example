@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'com.ssi.clean.example.db.simple'
+
+dependencies {
+	implementation(
+		project(':entities'),
+		project(':usecase')
+	)
+}

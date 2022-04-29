@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'com.ssi.clean.example.uuid'
+
+dependencies {
+	implementation(
+		project(':usecase')
+	)
+}
